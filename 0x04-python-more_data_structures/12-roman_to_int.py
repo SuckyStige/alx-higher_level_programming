@@ -24,7 +24,7 @@ def roman_to_int(roman_string):
         idx = 0
         for i in temp:
             try:
-                if temp[idx] == 'I' and temp[idx + 1] == 'V':
+                if temp[idx] == 'I' and temp[idx + 1] == 'IV':
                     temp[idx:idx + 2] = [''.join(temp[idx:idx + 2])]
             except IndexError:
                 pass
@@ -33,7 +33,7 @@ def roman_to_int(roman_string):
                     temp[idx:idx + 2] = [''.join(temp[idx:idx + 2])]
             except IndexError:
                 pass
-            idx += 1
+            idx += 2  
             for k, v in i_dict.items():
                 for index in temp:
                     if index == k:
