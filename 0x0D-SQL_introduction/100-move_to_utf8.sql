@@ -1,2 +1,4 @@
--- displays the average temperature by city ordered by temperature
-SELECT city, AVG(value) as avg_temp FROM temperatures GROUP BY city ORDER BY avg_temp DESC;
+-- Converts the entire database hbtn_0c_0 to UTF8.
+USE `hbtn_0c_0`
+ALTER TABLE `first_table`
+CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
